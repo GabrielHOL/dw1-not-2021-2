@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /*
+            Regrams iniciadas com # aplicam-se apenas aos elementos html com id correspondente
+        */
+        #logo {
+            /* Alterar a largura da imagem*/
+            width: 300px;
+        }
+
+
+        #publi{
+            text-align: center;
+            background-image: url('img/light-carbonfiber.png');
+
+            padding: 30px;
+
+            border: 2px solid white;
+        }
+
+        /* height: 600px;*/
+
+        #publi figcaption{
+            font-family: "Calibri";
+            font-style: italic;
+        }
+        
+        #publi img{
+            /* Borda arredondada;*/
+            border-radius: 16px;
+        }
+
+        body{
+            /* Colocar uma imagem de fundo na pagina. Se a imagem for menor que a pagina, ela será repetida na horizontal e na vertical (ladrilhamento);*/
+            background-image: url('img/metal.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <img>: usada para exibir imagens na pagina
+        Atributos:
+        - src: indica a fonte da imagens, ou em outras palavras onde está o arquivo imagem que deve ser exibido
+        - alt: especifica um texto alternativo que será exibido no lugar da imagem caso está não possa ser carregada
+    -->
+    <!--
+        O atributo id identifica unicamente um elemento dentro de uma pagina HTML. Pode ser qualquer elemento.
+    -->
+
+    <img id="logo" src="img/apptiva-logo.png" alt="Logotipo da emrepsa Apptiva">
+
+    <img id="icone" src="img/apptiva-icon.png" alt="Icone da empresa apptiva">
+
+    <!--
+        <figure>: reprensenta uma figura, formada por uma imagem (<img>) e uma legenda (<figcaption>)
+    -->
+
+    <figure id="publi">
+
+    <!--
+    O atributo aria-label (que pode ser adocionado a qualquer elemento) preve uma forma de descrever o conteudo para uso de leitores de tela por defiecientes visuais.
+    Faz parte dos recursos de ACESSIBILIDADE do HTML.
+    -->
+    <img src="img/distance-education-1000px.jpg" alt="Educação a distancia" aria-label="Menina de cabelos longos escrevendo com um lapis em um caderno, tendo a sua frente um tablet e um notebook" title="Imagem meramente ilustrativa">
+    <figcaption>Estudando com a Apptiva, seu sucesso é garantido</figcaption>
+    </figure>
+
+    <img src="img/svg-logo.svg" alt="Logotipo do formato SVG" style="width: 100%;">
+
+</body>
+</html>
