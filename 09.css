@@ -1,0 +1,14 @@
+a{
+    color:orangered;
+    text-decoration: none;
+}
+/*Regra para os links que ja foram visitados*/
+a:visited{
+    color: orange;
+}
+
+/* Regra para os links quando o moise está sobre eles*/
+a:hover{
+    color: tomato;
+    text-decoration: underline;
+}

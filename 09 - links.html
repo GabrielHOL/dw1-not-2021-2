@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Links</title>
+    <!--Link para o arquivo css-->
+    <link rel="stylesheet" href="09.css">
 </head>
 <body>
     <!--
@@ -32,5 +34,74 @@
 
         UM LINK DE INTERNET É TECNICAMENTE CHAMADO DE URL (UNIVERSAL RESOURCE LOCATOR - localizador universal de recurso).
     -->
+    <!--
+        Existem dois tipos de elementos no HTML
+        1)
+    -->
+    <!--
+        <a> representa uma ligação (link) para outro conteudo no mesmo site ou em outro site
+        Atributos: 
+        -href: especifica a URL de destino do link
+        -target: quando seu valor é "_blank", o link de destino será carregado em uma outra aba do navegador
+        -rel (atributo semantica): especifica o relacionamento entre a pagina atual e  a pagina/conteudo linkada.
+        Valores possivel:
+        * external: indentifica um link externo`
+        * dofollow: quando o link aponta para um site de alta reputação ou que o autor recomenda (endossa)
+        * nofollow: quando o link aponta para um conteudo de baixa reputação ou patrocininado, ou que o autor não recomenda
+        * prev: link para a pagina anterior de um mesmo site
+        * next: link para a pagina seguinte de um mesmo site
+        * author: identifica o link para o site pessoal ou emaildo autor da pagina
+
+    -->
+    <!--link externo: link para outro site. O href precisa ser a URL completa-->
+    <p>
+    Acesse agora o <a href="https://site.fatecfranca.edu.br" rel="external dofollow" >Site da Fatec Franca</a> e fique sabendo das novidades dos cursos.
+    </p>
+    <!--link interno: link para outra pagina do mesmo site. Pode conter apenas a parte da rota ou caminho da URL, sem dominio e sem protocolo-->
+    <p>
+    <a href="07-imagens.html">Formatos de imagem</a>
+    </p>
+
+    <!--link de imagem: o texto qie fica entre as tags de abertura e fechamento é substituida por um elemento <img>-->
+
+    <div>
+        <a href="08-imagens2.html">
+            <img src="img/apptiva-icon.png" alt="Site da Apptiva">
+        </a>
+
+    </div>
+
+    <div>
+        <!--link será aberto em uma nova aba do navegador. Geralmente, target="_blank" é usado para links externos, para evitar que o usuario se "esqueça" de voltar para o site original-->
+        <ul>
+        <li>
+            <a href="http://github.com" target="_blank" rel="external">Github</a>
+        </li>
+        <li>
+            <a href="http://pudim.com.br" target="_blank" rel="external nofollow">Pudim</a>
+            </li>
+        </ul>
+
+        <!-- Para forçar yn cibteudo a ser baixado (download) em vez de ser avberto no navegador, podemos usar o atributo download-->
+
+    </div>
+    <p>
+        <a href="img/metal.jpg" download>Faça o download da imagem</a>
+    </p>
+
+    <p>
+        Aprenda mais sobre <em>links</em> como a <a href="arquivos/10-apostila-links.pdf" download="Apostila de links do Prof. Gustavo Gaunabara.pdf">apostila do professor Gustavo Guanabara</a>
+    </p>
+
+    <p>
+        <a href="08-imagens2.html" rel="prev">&larr;Pagina anterior</a>
+        <a href="10-imagens-dinamicas.html" rel="next">&rarr;Pagina seguinte</a>
+    </p>
+
+    
+
+    <p>&copy; 2011 <a href="https://faustocintra.com.br" rel="external dofollow author">Prof. Fausto Cintra</a>. Contato: <a href="mailto:professor@faustocintra.com.br" rel="author">professor@faustocintra.com.br</a> </p>
+
+
 </body>
 </html>
